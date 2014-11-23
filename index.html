@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+    Web client main page.
+
+    Author: insert name here
+-->
+
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Flaming Octo Archer</title>
+
+        <link rel='stylesheet' href='/res/main.css'>
+
+        <script src='/res/bower/webcomponentsjs/webcomponents.min.js'></script>
+
+        <!--Import external Polymer elements from bower_components-->
+
+        <!--Import local Polymer elements-->
+        <link rel='import'
+              href='/res/local/local-translator/local-translator.html'>
+    </head>
+
+    <body>
+        Welcome to Flaming Octo Archer!
+
+        <button onclick='translateExample()'>Translate!</button>
+
+        <local-translator id='translator'></local-translator>
+
+        <script>
+            translator = document.getElementById('translator');
+            var translateExample = function() {
+                translator.input = 'example text input';
+                translator.updateOut();
+            }
+        </script>
+    </body>
+</html>

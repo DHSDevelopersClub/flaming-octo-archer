@@ -1,0 +1,19 @@
+{
+  "name": "flaming-octo-archer",
+  "homepage": "https://github.com/DHSDevelopersClub/flaming-octo-archer",
+  "authors": [
+    "Alexander Otavka <zotavka@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.1"
+  }
+}
