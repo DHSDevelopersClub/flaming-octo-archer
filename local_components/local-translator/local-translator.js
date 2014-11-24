@@ -1,7 +1,7 @@
 /**
  * Main script for local-translator element.
  *
- * Author: insert name here
+ * Author: Max Starr
  */
 
 Polymer({
