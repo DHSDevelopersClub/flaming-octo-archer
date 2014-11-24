@@ -2,7 +2,11 @@
 <!--
     Web client main page.
 
+<<<<<<< HEAD
     Author: Max Starr
+=======
+    Author: insert name here
+>>>>>>> test/master
 -->
 
 <html>
@@ -11,6 +15,7 @@
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <title>Flaming Octo Archer</title>
 
+<<<<<<< HEAD
         <link rel='stylesheet' href='main.css'>
 
         <script src='bower_components/webcomponentsjs/webcomponents.min.js'></script>
@@ -47,16 +52,40 @@
         <paper-input id='text-input' label="Input"></paper-input>
         <paper-button id='input' onclick='translateExample()'><core-icon icon='done'></core-icon>Translate!</paper-button>
         <p id="test-output"></p>
+=======
+        <link rel='stylesheet' href='/res/main.css'>
+
+        <script src='/res/bower/webcomponentsjs/webcomponents.min.js'></script>
+
+        <!--Import external Polymer elements from bower_components-->
+
+        <!--Import local Polymer elements-->
+        <link rel='import'
+              href='/res/local/local-translator/local-translator.html'>
+    </head>
+
+    <body>
+        Welcome to Flaming Octo Archer!
+
+        <button onclick='translateExample()'>Translate!</button>
+
+>>>>>>> test/master
         <local-translator id='translator'></local-translator>
 
         <script>
             translator = document.getElementById('translator');
             var translateExample = function() {
+<<<<<<< HEAD
                 input = document.getElementById("text-input").value;
                 translator.input = input;
                 translator.updateOut();
             }
 
+=======
+                translator.input = 'example text input';
+                translator.updateOut();
+            }
+>>>>>>> test/master
         </script>
     </body>
 </html>
