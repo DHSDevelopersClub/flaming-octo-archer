@@ -1,11 +1,7 @@
 {
   "name": "webcomponentsjs",
   "main": "webcomponents.js",
-<<<<<<< HEAD
   "version": "0.5.1-1",
-=======
-  "version": "0.5.1",
->>>>>>> test/master
   "homepage": "http://webcomponents.org",
   "authors": [
     "The Polymer Authors"
@@ -15,8 +11,4 @@
   ],
   "license": "BSD",
   "ignore": []
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> test/master

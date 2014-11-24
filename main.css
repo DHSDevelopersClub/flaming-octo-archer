@@ -1,8 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 /** 
  * Styling for index.html. 
- * 
-<<<<<<< HEAD
+ *
  * Author: Max Starr
  */
 html, body{
@@ -26,10 +25,4 @@ body {
 
 core-toolbar{
     background: #27ae60;
-=======
- * Author: insert name here
- */
-body {
-  font-family: 'Roboto', sans-serif;
->>>>>>> test/master
 }
