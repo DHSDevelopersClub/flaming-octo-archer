@@ -10,7 +10,6 @@ Polymer({
     },
     updateOut: function() {
         console.log('debug input = "' + this.input + '"');
-        this.$.output.innerHTML = '<div>--. -.--.-. .-..- -.-.-</div>' +
-                           '<div>-.-.-. -..</div>';
+        this.$.output.innerHTML = this.input;
     },
 });

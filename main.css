@@ -4,6 +4,25 @@
  * 
  * Author: insert name here
  */
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+}
 body {
-  font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+#input{
+    background-color: #2ecc71;
+}
+
+#text-input /deep/ .focused-underline {
+    /* line color when the input is focused */
+    background-color: #2ecc71;
+}
+
+core-toolbar{
+    background: #27ae60;
 }
