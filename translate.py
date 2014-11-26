@@ -8,8 +8,15 @@ def text_to_morse(words):
         @param words: A list of Alphanumeric strings.
         @returns: A list of lists of strings containing . and -
         '''
-        print morse_alphabet
-        return [['-.-.-', '---', '..-'], ['-..', '-..', '...', '---']]
+	morse_word_list = []
+        for word in words:
+		morse_letter_list = []
+		letters = list(word)
+		for letter in letters:
+			 morse_letter_list.append(morse_alphabet[letter])
+		morse_word_list.append(morse_letter_list)
+			
+        return morse_word_list
 
 '''Morse code dictionary definitions'''
 morse_alphabet = {}
