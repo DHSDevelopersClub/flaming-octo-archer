@@ -85,7 +85,7 @@ with everyone, and modify this file.
             
             Status: 200 OK
             Headers: default
-            Content: '[["-..--.-", "--.", "..."],["-.-.--.","--.."]]'
+            Content: '[[".---", "...", "---", "-."],[".-",".-..", ".--.", "....", ".-", "-.", "..-", "--", ".", ".-.", "..", "-.-."]]'
 
     -   Each string in the request JSON array should correspond to an array
         of strings in the response.  That response array should be a letter
