@@ -11,29 +11,29 @@
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <title>Flaming Octo Archer</title>
 
-        <link rel='stylesheet' href='main.css'>
+        <link rel='stylesheet' href='/res/main.css'>
 
-        <script src='bower_components/webcomponentsjs/webcomponents.min.js'></script>
+        <script src='/res/bower/webcomponentsjs/webcomponents.min.js'></script>
 
         <!--Import external Polymer elements from bower_components-->
 
         <link rel="impoert"
-              href="bower_components/polymer/polymer.html">
+              href="/res/bower/polymer/polymer.html">
         <link rel="import"
-              href="bower_components/paper-button/paper-button.html">
+              href="/res/bower/paper-button/paper-button.html">
         <link rel="import"
-              href="bower_components/paper-input/paper-input.html">
+              href="/res/bower/paper-input/paper-input.html">
         <link rel="import"
-              href="bower_components/core-toolbar/core-toolbar.html">
+              href="/res/bower/core-toolbar/core-toolbar.html">
         <link rel="import"
-              href="bower_components/paper-icon-button/paper-icon-button.html">
+              href="/res/bower/paper-icon-button/paper-icon-button.html">
         <link rel="input"
-              href="bower_components/core-icons/core-icons.html">
+              href="/res/bower/core-icons/core-icons.html">
         <link rel="import"
-              href="bower_components/core-input/core-input.html">
+              href="/res/bower/core-input/core-input.html">
         <!--Import local Polymer elements-->
         <link rel='import'
-              href='local_components/local-translator/local-translator.html'>
+              href='/res/local/local-translator/local-translator.html'>
     </head>
 
     <body>
@@ -46,7 +46,6 @@
 
         <paper-input id='text-input' label="Input"></paper-input>
         <paper-button id='input' onclick='translateExample()'><core-icon icon='done'></core-icon>Translate!</paper-button>
-        <p id="test-output"></p>
         <local-translator id='translator'></local-translator>
 
         <script>
