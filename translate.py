@@ -3,20 +3,20 @@ __author__ = 'Sebastian Boyd'
 
 
 def text_to_morse(words):
-        '''Translate a list of words into morse code.
+    '''Translate a list of words into morse code.
 
-        @param words: A list of Alphanumeric strings.
-        @returns: A list of lists of strings containing . and -
-        '''
-	morse_word_list = []
-        for word in words:
-		morse_letter_list = []
-		letters = list(word)
-		for letter in letters:
-			 morse_letter_list.append(morse_alphabet[letter])
-		morse_word_list.append(morse_letter_list)
-			
-        return morse_word_list
+    @param words: A list of Alphanumeric strings.
+    @returns: A list of lists of strings containing . and -
+    '''
+    morse_word_list = []
+    for word in words:
+        morse_letter_list = []
+        letters = list(word)
+    for letter in letters:
+        morse_letter_list.append(morse_alphabet[letter])
+    morse_word_list.append(morse_letter_list)
+
+    return morse_word_list
 
 '''Morse code dictionary definitions'''
 morse_alphabet = {}
