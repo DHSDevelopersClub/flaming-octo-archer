@@ -10,11 +10,12 @@ def text_to_morse(words):
     '''
     morse_word_list = []
     for word in words:
+        word = word.lower()
         morse_letter_list = []
         letters = list(word)
-    for letter in letters:
-        morse_letter_list.append(morse_alphabet[letter])
-    morse_word_list.append(morse_letter_list)
+        for letter in letters:
+            morse_letter_list.append(morse_alphabet[letter])
+        morse_word_list.append(morse_letter_list)
 
     return morse_word_list
 
