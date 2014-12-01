@@ -8,6 +8,11 @@ We will make an app using Google App Engine.  There will be a server and there
 will be a web client.  We may even make Android and iOS clients, so we know
 how, but that is a secondary goal.
 
+*IMPORTANT*
+When you pick a file, set the author line (at the top) to your name, then do
+a commit and push, before you do anything else.  This way we won't have two
+people doing the same work.
+
 If you have any questions, feel free to email me at 
 [zotavka@gmail.com](mailto:zotavka@gmail.com).
 
