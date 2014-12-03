@@ -2,7 +2,7 @@
 <!--
     Web client main page.
 
-    Author: insert name here
+    Author: Max Starr
 -->
 
 <html>
@@ -17,22 +17,42 @@
 
         <!--Import external Polymer elements from bower_components-->
 
+        <link rel="impoert"
+              href="/res/bower/polymer/polymer.html">
+        <link rel="import"
+              href="/res/bower/paper-button/paper-button.html">
+        <link rel="import"
+              href="/res/bower/paper-input/paper-input.html">
+        <link rel="import"
+              href="/res/bower/core-toolbar/core-toolbar.html">
+        <link rel="import"
+              href="/res/bower/paper-icon-button/paper-icon-button.html">
+        <link rel="input"
+              href="/res/bower/core-icons/core-icons.html">
+        <link rel="import"
+              href="/res/bower/core-input/core-input.html">
         <!--Import local Polymer elements-->
         <link rel='import'
               href='/res/local/local-translator/local-translator.html'>
     </head>
 
     <body>
-        Welcome to Flaming Octo Archer!
+        <core-toolbar>
+            <paper-icon-button icon="menu"></paper-icon-button>
+            <span flex>Welcome to Flaming Octo Archer!</span>
+            <paper-icon-button icon="refresh"></paper-icon-button>
+            <paper-icon-button icon="more-vert"></paper-icon-button>
+        </core-toolbar>
 
-        <button onclick='translateExample()'>Translate!</button>
-
+        <paper-input id='text-input' label="Input"></paper-input>
+        <paper-button id='input' onclick='translateExample()'><core-icon icon='done'></core-icon>Translate!</paper-button>
         <local-translator id='translator'></local-translator>
 
         <script>
             translator = document.getElementById('translator');
             var translateExample = function() {
-                translator.input = 'example text input';
+                input = document.getElementById("text-input").value;
+                translator.input = input;
                 translator.updateOut();
             }
         </script>
