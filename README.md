@@ -1,6 +1,11 @@
 flaming-octo-archer
 ===================
 
+*IMPORTANT*
+-------------------
+The request format has changed from a list of strings to a string separated by
+spaces. Make sure you modify your code to work with this format.
+
 This project is a learning experience.  Hopefully, when we are done, we will
 have a better idea of what it is like to work as a group.
 
@@ -84,7 +89,7 @@ with everyone, and modify this file.
             Method: GET
             URL: /_ah/api/morsetranslate/v1/texttomorse
             Headers: default
-            Content: text='["json","alphanumeric","string","array"]'
+            Content: text="json alphanumeric string"
 
     -   Should return a response like this:
             
