@@ -3,12 +3,13 @@ __author__ = 'Sebastian Boyd and Duncan Grubbs?'
 
 
 import endpoints
+import json
 from protorpc import messages, message_types, remote
 
 from translate import text_to_morse
 
 class MorsecodeRequest(messages.Message):
-	message = messages.StringField(1)
+	text = messages.StringField(1)
 
 class MorsecodeResponse(messages.Message):
 	message = messages.StringField(1)
@@ -20,8 +21,9 @@ class MorseTranslateAPI(remote.Service):
                   MorsecodeResponse,
                   name='morsetranslate.morsecode', path='texttomorse')
     def morsecode(self, request):
-	print request.message
-        data = text_to_morse(request.message)
+	print request.text
+        data = text_to_morse(request.text)
+	data = json.dumps(data)
         return MorsecodeResponse(message=data)
 
 application = endpoints.api_server([MorseTranslateAPI])
