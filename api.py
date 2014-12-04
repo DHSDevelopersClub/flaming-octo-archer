@@ -1,5 +1,5 @@
 '''The main Endpoints API file.'''
-__author__ = 'Sebastian Boyd and Duncan Grubbs?'
+__author__ = 'Sebastian Boyd and Duncan Grubbs'
 
 
 import endpoints
