@@ -1,10 +1,13 @@
 flaming-octo-archer
 ===================
 
-*IMPORTANT*
--------------------
+IMPORTANT
+---------
 The request format has changed from a list of strings to a string separated by
 spaces. Make sure you modify your code to work with this format.
+
+Introduction
+------------
 
 This project is a learning experience.  Hopefully, when we are done, we will
 have a better idea of what it is like to work as a group.
