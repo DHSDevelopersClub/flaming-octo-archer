@@ -21,6 +21,6 @@ class MorseTranslateAPI(remote.Service):
                   name='morsetranslate.morsecode', path='texttomorse')
     def morsecode(self, request):
         data = text_to_morse(request)
-	return data
+        return data
 
 application = endpoints.api_server([MorseTranslateAPI])
