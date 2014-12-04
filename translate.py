@@ -2,12 +2,13 @@
 __author__ = 'Sebastian Boyd'
 
 
-def text_to_morse(words):
+def text_to_morse(string):
     '''Translate a list of words into morse code.
 
     @param words: A list of Alphanumeric strings.
     @returns: A list of lists of strings containing . and -
     '''
+    words = string.split()
     morse_word_list = []
     for word in words:
         word = word.lower()
