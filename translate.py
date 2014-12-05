@@ -1,14 +1,15 @@
 '''Helper functions for morse code translation.'''
 __author__ = 'Sebastian Boyd'
+import re
 
-
-def text_to_morse(string):
+def text_to_morse(text):
     '''Translate a list of words into morse code.
 
     @param words: A list of Alphanumeric strings.
     @returns: A list of lists of strings containing . and -
     '''
-    words = string.split()
+    text = format(text)
+    words = text.split()
     morse_word_list = []
     for word in words:
         word = word.lower()
@@ -19,6 +20,13 @@ def text_to_morse(string):
         morse_word_list.append(morse_letter_list)
 
     return morse_word_list
+
+def format(text):
+	pattern = re.compile('[\W_]+', re.UNICODE)
+	text = pattern.sub('', text)
+	text = text.lower()
+	return text
+	
 
 '''Morse code dictionary definitions'''
 morse_alphabet = {}
