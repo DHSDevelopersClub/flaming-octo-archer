@@ -22,6 +22,8 @@ def text_to_morse(text):
     return morse_word_list
 
 def format(text):
+	if text == None:
+		text = ''
 	pattern = re.compile('[\W_]+', re.UNICODE)
 	text = pattern.sub('', text)
 	text = text.lower()
