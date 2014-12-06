@@ -23,6 +23,9 @@ handlers:
   static_dir: local_components
 - url: /res/bower
   static_dir: bower_components
+- url: /res/script.js
+  static_files: script.js
+  upload: script.js
 
 libraries:
 - name: pycrypto

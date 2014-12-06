@@ -1,28 +1,40 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto);
+
 /** 
  * Styling for index.html. 
  *
  * Author: Max Starr
  */
-html, body{
+
+html,
+body {
     height: 100%;
     width: 100%;
     margin: 0;
-
 }
 body {
     font-family: 'Roboto', sans-serif;
 }
-
-#input{
+#input {
     background-color: #2ecc71;
 }
-
 #text-input /deep/ .focused-underline {
     /* line color when the input is focused */
     background-color: #2ecc71;
 }
-
-core-toolbar{
+core-toolbar {
     background: #27ae60;
+}
+.menu {
+    width: 200px;
+    background-color: #585858;
+    position: fixed;
+    z-index: 0;
+}
+.mainPage {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-color: white;
 }
