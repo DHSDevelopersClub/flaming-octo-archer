@@ -34,22 +34,23 @@
 </head>
 
 <body unresolved>
-    <section class='mainPage'>
-        <core-toolbar>
-            <paper-icon-button icon="menu" onclick='play()'></paper-icon-button>
-            <span flex>Welcome to Flaming Octo Archer!</span>
-            <paper-icon-button icon="refresh"></paper-icon-button>
-            <paper-icon-button icon="more-vert"></paper-icon-button>
-        </core-toolbar>
-        <section class="mainBody">
-            <paper-input id='text-input' label="Input"></paper-input>
-            <paper-button id='input' onclick='translateExample()'>
-                <core-icon icon='done'></core-icon>Translate!</paper-button>
-            <local-translator id='translator'></local-translator>
+
+        <section class='mainPage'>
+            <core-toolbar>
+                <paper-icon-button icon="menu" onclick='show()'></paper-icon-button>
+                <span flex>Welcome to Flaming Octo Archer!</span>
+                <paper-icon-button icon="refresh"></paper-icon-button>
+                <paper-icon-button icon="more-vert"></paper-icon-button>
+            </core-toolbar>
+            <section class="mainBody">
+                <paper-input id='text-input' label="Input"></paper-input>
+                <paper-button id='input' onclick='translateExample()'>
+                    <core-icon icon='done'></core-icon>Translate!</paper-button>
+                <local-translator id='translator'></local-translator>
+            </section>
+
         </section>
-
-    </section>
-
+    <section class='pageCover' onclick='hide()'></section>
     <section class="menu">
 
         <core-menu selected="0">
