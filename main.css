@@ -25,7 +25,7 @@ body {
 core-toolbar {
     background: #27ae60;
 }
-/*
+
 .menu {
     width: 200px;
     height: 100%;
@@ -41,8 +41,11 @@ core-toolbar {
     background-color: white;
     box-shadow: -10px 0px 20px 2px #3b3b3b;
 }
-*/
+.mainBody{
+    margin: 5px;
+}
 
+/*
 .menu {
     width: 200px;
     height: 100%;
@@ -69,3 +72,4 @@ core-toolbar {
 .mainBody {
     margin: 10px;
 }
+*/

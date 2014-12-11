@@ -13,7 +13,7 @@
     <title>Flaming Octo Archer</title>
 
     <link rel='stylesheet' href='/res/main.css'>
-
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src='/res/bower/webcomponentsjs/webcomponents.min.js'></script>
 
     <!--Import external Polymer elements from bower_components-->
@@ -37,7 +37,7 @@
 
         <section class='mainPage'>
             <core-toolbar>
-                <paper-icon-button icon="menu" onclick='show()'></paper-icon-button>
+                <paper-icon-button icon="menu" id='menuButton' onclick='show()'></paper-icon-button>
                 <span flex>Welcome to Flaming Octo Archer!</span>
                 <paper-icon-button icon="refresh"></paper-icon-button>
                 <paper-icon-button icon="more-vert"></paper-icon-button>
