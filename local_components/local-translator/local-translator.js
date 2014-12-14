@@ -8,7 +8,7 @@ Polymer({
     publish: {
         input: '',
     },
-    updateOut: function() {
+    updateOut: function () {
         console.log('debug input = "' + this.input + '"');
         this.$.output.innerHTML = this.input;
     },
